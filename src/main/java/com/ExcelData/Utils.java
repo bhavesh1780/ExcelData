@@ -24,8 +24,11 @@ public class Utils extends BasePage
         // re-usable method for typing text into element (instead of sendKeys())
         public static void typeText(By by, String text){
             //clearing any existing text from the element
+
             driver.findElement(by).clear();
+
             //sending your text to the locator by
+
             driver.findElement(by).sendKeys(text);
         }
 

@@ -45,7 +45,9 @@ public class ExcelRead extends Utils {
                 //Print Excel data in console
                 //System.out.println(row.getCell(j).);
 
-                System.out.print(row.getCell(j).getStringCellValue()+ "\t||\t ");
+                System.out.print(String.format(row.getCell(j).getStringCellValue()+ "\t || \t "));
+//                System.out.print(String.format("%-20s = %s","row.getCell(j).getStringCellValue"));
+
             }
             System.out.println();
         }
